@@ -10,7 +10,15 @@ const config: Config = {
     extend: {
       container:{
         center:true,
-        padding: "1rem",
+        screens:{
+          "lg": "100%",
+          "xl": "100%",
+          "2xl": "100%",
+        },
+        padding: {
+          DEFAULT: '1rem',
+
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -24,6 +32,9 @@ const config: Config = {
         secondary: {
           dark: '#2e2e2e',
           light: '#3b3a3a',
+        },
+        tertiary: {
+          light: '#7a82a0',
         },
         text: {
           header: '#ffffff', 
