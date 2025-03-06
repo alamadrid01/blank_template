@@ -16,6 +16,7 @@ import CarouseLayout from '../Layouts/CarouseLayout/page';
 import Image from 'next/image';
 import { MdOutlinePersonSearch } from "react-icons/md";
 import { CiLink } from 'react-icons/ci';
+import Link from 'next/link';
 
 const Carousel = () => {
     const [active, setActive] = useState(1);
@@ -67,6 +68,7 @@ const Carousel = () => {
             {[...Array(10)].map((_, index) => (
                 <CarouselCards 
                 key={index}
+                big={false}
                 upperTag="Nearby cooling spot"
                 upperLogo={<MdOutlineHotelClass />}
                 isFavorite={true}
@@ -117,9 +119,9 @@ const Applications = ({
   );
 
 
-const CarouselCards = ({upperTag, upperLogo, isFavorite, image, title, rating, reviews, location}: {upperTag: string, upperLogo: any, isFavorite: boolean, image: string, title: string, rating: number, reviews: number, location: string}) => {
+export const CarouselCards = ({upperTag, big, upperLogo, isFavorite, image, title, rating, reviews, location}: {upperTag: string, big:boolean, upperLogo: any, isFavorite: boolean, image: string, title: string, rating: number, reviews: number, location: string}) => {
     return (
-        <div className="relative 2xl:w-1/5 p-2 mb-5 xl:w-2/6 w-full md:w-1/2 group overflow-hidden">
+        <Link href="/property/trick" className={`relative mb-5 p-2 ${ !big ? "2xl:w-1/5 xl:w-2/6 md:w-1/2 group" : "2xl:w-1/3 md:w-1/2"} w-full  overflow-hidden`}>
             <div className="relative h-72">
                 <Image src={image} alt={title} width={600} height={600} className="w-full h-full rounded-xl group-hover:scale-105 transition-all duration-300 delay-75 object-cover" />
                 <div className="absolute top-2 right-2">
@@ -147,5 +149,5 @@ const CarouselCards = ({upperTag, upperLogo, isFavorite, image, title, rating, r
                 </p>
                </div>
             </div>
-        </div>
+        </Link>
     )}

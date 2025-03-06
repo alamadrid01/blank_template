@@ -4,12 +4,24 @@ import { CiSearch } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <div className='container flex font-[family-name:var(--font-geist-sans)] items-center flex-col justify-center mt-6 gap-6'>
-      <h1 className='text-[2.5rem] font-extrabold font-[family-name:var(--font-nav)] text-text-header'>Find your happy place</h1>
-      <p className="text-text-secondary leading-6 font-[family-name:var(--font-geist-sans)] max-w-2xl text-center">
+    <div
+    className='container flex font-[family-name:var(--font-geist-sans)] relative items-center flex-col justify-center mt-6 gap-6'>
+        <div className="w-full h-[400px] absolute left-0 -top-40 z-0"
+        style={{ 
+            backgroundImage: `url("/images/house.webp")`,
+            backgroundSize: '70%',
+            maskImage: 'radial-gradient(circle, rgba(0, 0, 0, 0.35) 10%, rgba(0, 0, 0, 0) 70%)',
+            // maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top',
+            zIndex: 0
+         }}
+        ></div>
+      <h1 className='text-[2.5rem] z-10 font-extrabold font-[family-name:var(--font-nav)] text-text-header'>Find your happy place</h1>
+      <p className="text-text-secondary z-10 leading-6 font-[family-name:var(--font-geist-sans)] max-w-2xl text-center">
         Book a Wander with inspiring views, hotel-grade amenities, dreamy beds, top-tier cleaning and 24/7 concierge service. It’s a vacation home, but better.
       </p>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center z-10 gap-2">
         <div className="flex">
             <Image src="/a.webp" alt="sample_human" width={300} height={300} className="rounded-full w-8 object-cover h-8" />
             <Image src="/b.webp" alt="sample_human" width={300} height={300} className="rounded-full w-8 object-cover -ml-1.5 h-8" />
@@ -19,7 +31,7 @@ const Hero = () => {
         </div>
         <p className="text-text-paragraph font-[family-name:var(--font-geist-sans)] text-sm">and 1000+ more happy guests</p>
       </div>
-      <div className="flex items-center">
+      <div className="flex z-10 items-center">
         <div className="rounded-tl-md cursor-pointer rounded-bl-md border border-secondary-light items-center gap-2 flex py-2.5 px-4">
             <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -35,6 +35,7 @@ const config: Config = {
         },
         tertiary: {
           light: '#7a82a0',
+          dark: '#1a1a1a',
         },
         text: {
           header: '#ffffff', 

@@ -14,7 +14,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className='py-20 container flex justify-between max-w-7xl'>
+    <div className='pt-20 pb-7 container flex justify-between max-w-7xl'>
       <div className="flex flex-col gap-40">
         <div className="flex flex-col gap-3">
         <div className="flex items-center">
