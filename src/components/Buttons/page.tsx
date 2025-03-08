@@ -13,7 +13,7 @@ const ClickableButtons = ({
   return (
     <button
     onClick={action}
-    className="flex items-center gap-2 py-2 px-3 rounded-md border border-secondary-light text-[15px] font-medium text-text-header cursor-pointer">
+    className="flex items-center gap-3 py-2 px-4 rounded-md border border-secondary-light text-[15px] font-medium hover:bg-secondary-dark/80 text-text-header cursor-pointer">
       {icon}
       <p>{text}</p>
     </button>

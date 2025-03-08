@@ -3,20 +3,18 @@ import React from "react";
 
 const LastSection = () => {
   return (
-    <div className="mt-6 mb-[30rem] h-[900px] ">
+    <div className="mt-6 mb-[30rem] h-[700px] ">
       <div
         className="flex h-full w-full relative items-end !bg-[length:auto_833px] !bg-top min-[1129px]:!bg-[length:100%_auto]"
         style={{
           background:
             `linear-gradient(to bottom, black, transparent 6%), linear-gradient(to right, black, transparent 2%, transparent 98%, black), url("/images/tr.jpg") no-repeat`,
             height: "100%",
-          left: "50%",
           position: "relative",
-          transform: "translateX(-50%)",
           maxWidth: "2500px",
         }}
       >
-        <div className="w-full bg-gradient-to-b from-transparent -mb-[13rem] via-1-black from-20% via-75%">
+        <div className="w-full bg-gradient-to-b from-transparent -mb-[28rem] via-1-black from-20% via-75%">
           <div className="relative mx-auto grid w-full max-w-screen-xl gap-12 px-5 md:grid-cols-2 xl:grid-cols-3">
             {cardData.map(({ imgSrc, alt, title, description }, index) => (
               <div key={index} className="w-full md:max-w-[355px]">

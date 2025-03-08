@@ -6,6 +6,7 @@ import {
   GiJewelCrown,
   GiInvisibleFace,
   GiPerfumeBottle,
+  GiArmoredBoomerang,
 } from "react-icons/gi";
 import { TiWatch } from "react-icons/ti";
 import { SiStyledcomponents } from "react-icons/si";
@@ -17,6 +18,7 @@ import Image from 'next/image';
 import { MdOutlinePersonSearch } from "react-icons/md";
 import { CiLink } from 'react-icons/ci';
 import Link from 'next/link';
+import ClickableButtons from '../Buttons/page';
 
 const Carousel = () => {
     const [active, setActive] = useState(1);
@@ -64,8 +66,8 @@ const Carousel = () => {
             />
             ))}
       </div>
-      <div className="flex flex-wrap mb-20">
-            {[...Array(10)].map((_, index) => (
+      <div className="flex relative flex-wrap mb-20">
+            {[...Array(15)].map((_, index) => (
                 <CarouselCards 
                 key={index}
                 big={false}
@@ -79,6 +81,8 @@ const Carousel = () => {
                 location="Lekki, Lagos"
             />
                 ))}
+                <div className="bg-gradient-to-b from-black/60 blur-md via-gray to-black -left-2 absolute bottom-0 h-[300px] w-full"></div>
+                <div className="z-50 absolute bottom-7 right-1/2"><ClickableButtons icon={<GiArmoredBoomerang />} action={() => {}} text="Explore more" /></div>
         </div>
     </CarouseLayout>
   )
