@@ -66,7 +66,7 @@ const ScrollSection = () => {
           animate="animate"
           exit={direction === "initialRight" ? "exitLeft" : "exitRight"}
           variants={textVariants}
-          className={`bg-clip-text block text-transparent bg-gradient-to-r ${selectedTab?.color} ${selectedTab?.color_gradient}`}
+          className={`bg-clip-text block text-transparent bg-gradient-to-r ${selectedTab?.color_gradient}`}
         >
           {selectedTab?.sectionTitle}
         </motion.span>

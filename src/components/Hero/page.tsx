@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const Hero = () => {
   return (
     <div
-    className='container flex font-[family-name:var(--font-geist-sans)] relative items-center flex-col justify-center mt-6 gap-6'>
+    className='container flex font-[family-name:var(--font-geist-sans)] relative items-center flex-col justify-center -mt-10 gap-6'>
         <div className="w-full h-[400px] absolute left-0 -top-40 z-0"
         style={{ 
             backgroundImage: `url("/images/house.webp")`,

@@ -91,7 +91,7 @@ const Carousel = () => {
 export default Carousel
 
 
-const Applications = ({
+export const Applications = ({
     text,
     routing,
     icons,
