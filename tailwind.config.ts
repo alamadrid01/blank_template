@@ -28,6 +28,7 @@ const config: Config = {
       colors :{
         primary: {
           DEFAULT: '#000000',
+          ghibli: '#eee7d4',
         },
         secondary: {
           dark: '#2e2e2e',
@@ -40,7 +41,8 @@ const config: Config = {
         text: {
           header: '#ffffff', 
           paragraph: '#999999',
-          secondary: '#c1c1c1'
+          secondary: '#c1c1c1',
+          ghibli: '#7d3510',
         },
       }
     },
